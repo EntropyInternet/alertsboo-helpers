@@ -1,4 +1,4 @@
-import { BellID, SentryID, UserID } from "./base.type";
+import { BellID, SentryID, UserID } from './base.type'
 
 export interface Bell {
   id: BellID
@@ -11,7 +11,7 @@ export interface Bell {
   isActive: boolean
   status: BellStatus
   webhookUrl: string
-  autoExpire: number; // in seconds
+  autoExpire: number // in seconds
   expiresAt: Date // updated every new alert or when toggle active
   userID: UserID // owner of this bell
   customData: BellCustomData // customer defined
@@ -19,7 +19,7 @@ export interface Bell {
 }
 
 export enum BellPlatform {
-  instagram = 'instagram',
+  instagram = 'Instagram',
   // twitter = 'twitter',
   // reddit = 'reddit'
 }
@@ -29,13 +29,14 @@ export enum BellType {
   instagram_reel = 'instagram_reel',
 }
 export enum BellStatus {
-  pending = 'pending',
-  awaiting = 'awaiting',
-  active = 'active',
-  inactive = 'inactive',
+  pending = 'Pending',
+  awaiting = 'Awaiting',
+  active = 'Active',
+  paused = 'Paused',
 }
 // json serializable
 export interface BellCustomData {
-  [key: string]: string | number | boolean | Date | BellCustomData | BellCustomDataArray | null;
+  [key: string]: string | number | boolean | Date | BellCustomData | BellCustomDataArray | null
 }
-export interface BellCustomDataArray extends Array<string | number | boolean | Date | BellCustomData | BellCustomDataArray | null> {}
+export interface BellCustomDataArray
+  extends Array<string | number | boolean | Date | BellCustomData | BellCustomDataArray | null> {}

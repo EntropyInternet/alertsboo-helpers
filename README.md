@@ -10,6 +10,11 @@ $ npm install --save @entropyinternet/alertsboo-helpers
 import type { Alert } from '@entropyinternet/alertsboo-helpers';
 ```
 
+Update Version
+```bash
+$ npm install --save @entropyinternet/alertsboo-helpers@0.0.2
+```
+
 ## Building
 
 Every npm release must update the version number in `package.json`.
