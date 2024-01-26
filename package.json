@@ -1,9 +1,9 @@
 {
   "name": "@entropyinternet/alertsboo-helpers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "author": "0xterran",
-  "license": "private",
+  "license": "public",
   "scripts": {
     "watch": "rollup -c -w",
     "build": "rollup -c",
