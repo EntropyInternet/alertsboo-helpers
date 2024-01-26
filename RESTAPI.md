@@ -1,5 +1,8 @@
 # REST API Specification v0.1
 
+
+## REST Routes
+
 Subject to change.
 
 REST API uses a simple auth token in header. The token is valid indefinitely, but can be rotated by calling the `ROTATE token` action.
@@ -21,3 +24,22 @@ REST API uses a simple auth token in header. The token is valid indefinitely, bu
 |         |                 | v1/sample/instagram/story | GET    | Get a sample Instagram story       |
 |         |                 | v1/sample/instagram/live  | GET    | Get a sample Instagram live        |
 |         | Twitter         | v1/sample/twitter/post    | GET    | Get a sample Twitter post          |
+
+
+
+
+
+
+## Realtime Latency
+
+| Realtime Latency                    | Value |
+|-------------------------------------|-------|
+| Min Mins to Bell Active             | 5     |
+| Avg Mins to Bell Active             | 30    |
+| Fastest Mins to Alert               | 1     |
+| Avg Mins to Alert for Accounts <1000 followers | 2     |
+| Avg Mins to Alert for Accounts 1k - 10k       | 5     |
+| Avg Mins to Alert for Accounts 10k - 50k      | 10    |
+| Avg Mins to Alert for Accounts 50k - 100k     | 15    |
+| Avg Mins to Alert for Accounts >100k          | 30    |
+| Avg Mins to Alert for Accounts >1M            | 90    |
